@@ -1,0 +1,170 @@
+/* 
+general settings
+*/
+html,body, div, ul, li{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  color: #00a1d6;
+}
+header{
+  width: 100%;
+  height: 200px;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "020";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.page-width {
+  width: 980px;
+  margin: 0 auto;
+}
+/* 
+Header
+*/
+#header {
+  position: relative;
+  z-index: 999;
+  background: url("https://i0.hdslb.com/bfs/archive/0ac04c23af3b3297bf02dca163474326898d211d.png") no-repeat center -10px;
+}
+#nav-menu{
+  position:relative;
+}
+
+#nav-menu .nav-bg-wrapper {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.nav-bg-wrapper .bg {
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 62px;
+  background: url("https://i0.hdslb.com/bfs/archive/0ac04c23af3b3297bf02dca163474326898d211d.png") no-repeat center 0;
+filter: blur(5px);
+-webkit-filter: blur(5px);
+}
+.nav-bg-wrapper .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0,0%,100%,.4);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.nav-wrapper{
+  position: relative;
+  z-index: 2;
+}
+
+.nav-wrapper-content{
+  float: left;
+  margin-left: -10px;
+  font-size: 0;
+}
+
+.nav-wrapper-content .item{
+  display: inline-block;
+  position:relative;
+}
+.nav-wrapper-content .home{
+  margin-left: -10px;
+  padding-left: 12px;
+}
+.nav-wrapper-content .item > a{
+  line-height: 42px;
+  text-align: center;
+  font-size: 12px;
+  color: #222;
+  height: 100%;
+  display: block;
+  padding: 0 12px;
+}
+
+.nav-wrapper-content .item > a:hover{
+  background-color: rgba(255, 255, 255, .2);
+}
+.header-top__nav .item:hover{
+  display:block;
+}
+.bilibili-icon{
+  position: absolute;
+  width: 17px;
+  height: 14px;
+  left: 0;
+  top: 12px;
+  background-position: -919px -88px;
+}
+.new-icon{
+  position: absolute;
+  top: 6px;
+  right: -6px;
+  width: 22px;
+  height: 9px;
+  background-position: -851px -412px;
+}
+.mobile-icon{
+  display: inline-block;
+  vertical-align: middle;
+  background-position: -1367px -1175px;
+  width: 21px;
+  height: 21px;
+}
+.bilibili-icon,.new-icon, .mobile-icon{
+  display: inline-block;
+  background-image: url("https://static.hdslb.com/images/base/icons.png");
+}
+.nav-wrapper-user{
+  float:right;
+  margin-left: -10px;
+  font-size: 0;
+  
+}
+
+.i-face {
+  position: relative;
+  z-index: 20;
+  width: 36px;
+  height: 36px;
+  top: 0;
+}
+.face {
+  vertical-align: middle;
+  border: 0 solid #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.nav-wrapper-user .item{
+  float: left;
+  text-align: center;
+  line-height: 42px;
+  height: 42px;
+  position: relative;
+  background-color: hsla(0,0%,100%,0);
+}
+.nav-wrapper-user .item > a{
+  line-height: 42px;
+  text-align: center;
+  font-size: 12px;
+  color: #222;
+  height: 100%;
+  display: block;
+  padding: 0 12px;
+}
